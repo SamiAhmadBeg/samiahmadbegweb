@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sami Beg | Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    
+    <nav>
+        <div class="nav-content">
+            <div class="logo">SB</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mode-toggle" aria-label="Toggle light/dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Sami Beg</h1>
+                <p class="subtitle">Welcome to my digital space</p>
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I’m a software and AI developer with a passion for building, coding, and continuously learning new technologies. 
+                            I have competed in and won multiple hackathons at both the high school and college levels. 
+                            I love to write, started out writing stories on Reddit, went on to publish a best-selling horror collection on Amazon, and now contribute to the Grainger School of Business’s magazine. 
+                            My greatest strength, and sometimes my biggest challenge, is an endless curiosity that drives me.
+                        </p>
+                    </div>
+                    <div class="education-card">
+                        <img src="images/uw-madison-logo.png" alt="UW-Madison Logo" class="uw-logo">
+                        <div class="certificate-section">
+                            <h4>Data Science</h4>
+                            <p>Major</p>
+                        </div>
+                        <div class="certificate-section">
+                            <h4>GCLE</h4>
+                            <p>Certificate</p>
+                        </div>
+                        <div class="certificate-section">
+                            <h4>Consulting</h4>
+                            <p>Certificate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">StreamLit</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Javascript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/theothersamisss.png" alt="The Other Sami Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3>The Other Sami</h3>
+                            <p>'The Other Sami' is an AI chatbot that generates horror stories in my writing style. It uses TF-IDF embeddings to retrieve story fragments from a custom vector database. It is built on LangChain, Streamlit and OpenAI.</p>
+                            <div class="project-tags">
+                                <span>LangChain</span>
+                                <span>Streamlit</span>
+                                <span>OpenAI</span>
+                            </div>
+                            <a href="https://github.com/SamiAhmadBeg/TheOtherSami" class="project-link" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/cryptydvol1ss.jpg" alt="Cryptyd Vol 1 Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3>Cryptyd Volume 1</h3>
+                            <p>Cryptyd (Volume 1) is a collection of 12 horror stories, each offering a unique plot and experience. The book reached #10 in Amazon's free horror genre bestsellers. Crown jewel of my college application.</p>
+                            <div class="project-tags">
+                                <span>Writing</span>
+                                <span>Publishing</span>
+                                <span>Marketing</span>
+                            </div>
+                            <a href="https://www.amazon.in/Cryptyd-1-Sami-Beg-ebook/dp/B0BFFVV2MW" class="project-link" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/Fin.png" alt="Fin Project Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <h3>FinClear</h3>
+                            <p>Flutter based UI/UX project. Manage subscriptions, earn crypto rewards and discounts, pay your bills and trade Crypto with one app. Won me 'best mobile app' at the ASU x SUI hackathon.</p>
+                            <div class="project-tags">
+                                <span>UI/UX</span>
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                            </div>
+                            <a href="https://github.com/SamiAhmadBeg/FinClear" class="project-link" target="_blank">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests" class="interests">
+            <div class="container">
+                <h2>Interests & Passions</h2>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Coding</h3>
+                        <p>Passionate about coding and continuously expanding my technical skillset. Experienced in software development, AI integration, and web development workflows.</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-chess"></i>
+                        <h3>Chess</h3>
+                        <p>What captivates me most is the game's unique demand for complete self-accountability - every victory is earned and every loss you learn.</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-fist-raised"></i>
+                        <h3>MMA</h3>
+                        <p>Fascinated by MMA's dynamic nature, from striking to wrestling and grappling. Love analyzing fight tapes and making predictions, maintaining a high success rate in fight outcomes.</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-pen-fancy"></i>
+                        <h3>Writing</h3>
+                        <p>Wrote stories, a best seller, and currently write for the B-school's magazine. Fascinated by linguistics and how every language brings its own unique tone and perspective.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>I'm always open to discussing new ideas, projects and opportunities!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:samiahmadbeg2005@gmail.com">samiahmadbeg2005@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+16232757222">+1 (623) 275-7222</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Madison, WI | Tempe, AZ | San Francisco, CA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sami-beg/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/SamiAhmadBeg" target="_blank" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sami Beg. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
