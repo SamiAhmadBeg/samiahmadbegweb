@@ -707,11 +707,30 @@ footer::before {
         padding: 0.8rem 0;
     }
     .interests-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 1.5rem;
+        width: 100vw;
+        margin-left: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
-    
     .interest-card {
-        min-width: 260px;
+        min-width: 80vw;
+        max-width: 80vw;
+        flex: 0 0 80vw;
+        scroll-snap-align: center;
+        margin-bottom: 0;
+    }
+    .interests-grid::-webkit-scrollbar {
+        display: none;
+    }
+    .interests-grid {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 }
 
