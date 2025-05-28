@@ -596,8 +596,44 @@ footer::before {
 }
 
 @media (max-width: 768px) {
+    .nav-content {
+        flex-direction: row;
+        padding: 1rem 1rem;
+    }
     .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 1rem;
+        background: var(--card-bg);
+        flex-direction: column;
         gap: 1.5rem;
+        width: 180px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        border-radius: 12px;
+        z-index: 1001;
+        padding: 1.5rem 0;
+    }
+    .nav-links.open {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        z-index: 1002;
+        margin-left: 1rem;
+    }
+    .hamburger span {
+        height: 4px;
+        width: 100%;
+        background: var(--text-color);
+        margin: 4px 0;
+        border-radius: 2px;
+        transition: 0.3s;
     }
     .hero h1 {
         font-size: 2rem;
@@ -609,12 +645,66 @@ footer::before {
         max-width: 400px;
         margin: 0 auto;
     }
-    .project-grid {
+    .project-grid, .interests-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .project-card, .interest-card {
+        max-width: 100%;
+        min-width: 0;
+        margin: 0 auto;
+    }
+    .project-image, .interest-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .container {
+        padding: 0 1rem;
+    }
+    section, .about, .projects, .interests, .contact {
+        margin-bottom: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .project-card, .interest-card {
+        margin-bottom: 2rem;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .project-content, .interest-card {
+        padding: 1.5rem 1rem;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-content, .contact-content {
+        justify-items: center;
+        text-align: center;
+    }
+    .about-text p, .contact-info p {
+        text-align: center;
+    }
+    .skill-tags {
+        justify-content: center;
     }
     .social-links {
-        flex-direction: column;
         align-items: center;
+    }
+    .education-card {
+        margin: 1.5rem auto 0 auto;
+    }
+    .mode-toggle, .slider-button, .hamburger {
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+    }
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 0.8rem 0;
     }
     .interests-grid {
         grid-template-columns: 1fr;
@@ -710,4 +800,6 @@ section {
     pointer-events: none;
     z-index: 9999;
     opacity: 0.8;
-} 
+}
+
+.hamburger { display: none; } 
